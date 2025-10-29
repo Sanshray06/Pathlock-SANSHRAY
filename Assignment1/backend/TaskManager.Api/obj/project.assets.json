@@ -487,11 +487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ishaan Mittu\\task-manager\\backend\\TaskManager.Api\\TaskManager.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Ishaan Mittu\\task-manager\\Assignment1\\backend\\TaskManager.Api\\TaskManager.Api.csproj",
       "projectName": "TaskManager.Api",
-      "projectPath": "C:\\Users\\Ishaan Mittu\\task-manager\\backend\\TaskManager.Api\\TaskManager.Api.csproj",
+      "projectPath": "C:\\Users\\Ishaan Mittu\\task-manager\\Assignment1\\backend\\TaskManager.Api\\TaskManager.Api.csproj",
       "packagesPath": "C:\\Users\\Ishaan Mittu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ishaan Mittu\\task-manager\\backend\\TaskManager.Api\\obj\\",
+      "outputPath": "C:\\Users\\Ishaan Mittu\\task-manager\\Assignment1\\backend\\TaskManager.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ishaan Mittu\\AppData\\Roaming\\NuGet\\NuGet.Config"
