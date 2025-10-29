@@ -1,0 +1,81 @@
+.filter-bar {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+  color: #444;
+  overflow: hidden;
+}
+
+/* Fancy glowing hover */
+.filter-btn::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background: linear-gradient(45deg, #00f5ff, #ff00d4, #00ff99, #ffae00);
+  background-size: 300%;
+  z-index: -1;
+  border-radius: 10px;
+  filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.3s ease, background-position 1s ease;
+}
+
+.filter-btn:hover::before {
+  opacity: 0.7;
+  background-position: 100%;
+}
+
+/* Hover pop and glow */
+.filter-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  background: linear-gradient(135deg, #ffffff, #f5f5f5);
+  border-color: #888;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.3);
+}
+
+/* Active (selected) button */
+.filter-btn.active {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 195, 255, 0.6);
+  animation: pulse 1.5s infinite;
+}
+
+/* Pulse glow animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 195, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(0, 195, 255, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 195, 255, 0.5);
+  }
+}
+
+/* Disabled look */
+.filter-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
